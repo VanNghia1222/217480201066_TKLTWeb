@@ -1,0 +1,19 @@
+h1 {
+    color:red;
+}
+h2 {
+    color:blue;
+}
+h3 {
+    color:green;
+}
+div p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14;
+    font-weight: bold;
+}
+#hehe {
+    font-family: 'Times New Roman', Times, serif; 
+    font-size: 14;
+    background-color: yellow;
+}

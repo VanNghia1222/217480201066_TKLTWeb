@@ -1,0 +1,13 @@
+h1 {
+    color: blue;
+    text-align: center;
+}
+.box {
+    font-size: 16;
+    color: black;
+    width: 1080 px;
+    border: 2px solid #000;
+    padding: 20px;
+    background-color: pink;
+    font-weight: bold;
+}

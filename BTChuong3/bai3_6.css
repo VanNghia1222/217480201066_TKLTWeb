@@ -1,0 +1,20 @@
+p {
+font-family: 'Times New Roman', Times, serif;
+font-size: 17.5;
+}
+.gg {
+    font-weight: bold;
+}
+.mm {
+    font-weight: bold;
+}
+.ee {
+    font-weight: bold;
+}
+#hm {
+    list-style-type: disc;
+    font-style: italic;
+}
+#km {
+    list-style: square;
+}

@@ -1,0 +1,27 @@
+table,td,th {
+    border: 2px solid black;
+    border-collapse: collapse;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14;
+    text-align: center;
+    width: 20px;
+    height: 5px;
+    padding: 10px;
+
+}
+#sang {
+    background-color: rgb(105, 185, 68);
+}
+#chieu {
+    background-color: rgb(130, 121, 204);
+}
+th {
+    color: rgb(55, 149, 192);
+    background-color: antiquewhite;
+}
+.he {
+    background-color: antiquewhite;
+}
+.hi {
+    background-color: antiquewhite;
+}

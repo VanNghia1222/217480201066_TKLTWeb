@@ -1,0 +1,18 @@
+h2 {
+    color: red;
+    text-align: center;
+}
+#huhu {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14;
+    font-style: italic;
+    color: white;
+    background: aqua;
+}
+#hihi {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14;
+    font-style: italic;
+    color: yellow;
+    background: brown;
+}

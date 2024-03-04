@@ -3,6 +3,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        table {
+            border : 2px solid black;
+            border-collapse: collapse;
+        }
+    </style>
 </head>
 <body>
     <script lang="JavaScript">
@@ -14,12 +20,18 @@
         {
             DS[i] = prompt("Nhập tên thiết bị: ");
         }
-        for(x in DS)
-        {
-            document.write(DS[x]);
-            document.write("<br>");
-        }
-        document.write("<table> <td></td></table>")
+        document.write("DANH SÁCH THIẾT BỊ CÓ TÊN LÀ COMPUTER. ");
+        document.write("<table border = '1'>");
+        document.write("<tr><th>STT</th><th>Tên Thiết bị </th></tr>");
+        var i = 1
+            for (x in DS) 
+            {
+                if (DS[x].toLowerCase() == "Computer".toLowerCase())
+                {
+                    document.write("<tr><td>" + (i++) + "</td><td>" + DS[x] + "</td></tr>");
+                }
+            }
+        document.write("</table>");
     </script>
 
 </body>

@@ -1,0 +1,26 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script lang="JavaScript">
+        var SoLuong;
+        var x;
+        var DS = new Array(100);
+        SoLuong = prompt("Nhập số lượng thiết bị:",4);
+        for (i = 0; i<SoLuong; i++)
+        {
+            DS[i] = prompt("Nhập tên thiết bị: ");
+        }
+        for(x in DS)
+        {
+            document.write(DS[x]);
+            document.write("<br>");
+        }
+        document.write("<table> <td></td></table>")
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            width: 1000px;
+            text-align: center;
+  
+        }
+        body {
+            width: 100px;
+            height: 100px;
+            background-color: aquamarine;
+            margin: 5px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <script lang="JavaScript">       
+        function XuLy()
+        {
+            var D = new Date();
+            ThamNien.value = D.getFullYear() - NamVaoLam.value;
+            LuongCoBan.value = HeSo.value * LuongCoSo.value;
+            PhuCap.value = 1/4 * LuongCoBan.value;
+            ThanhTien.value = parseFloat(LuongCoBan.value) + parseFloat(PhuCap.value);
+        }
+    </script>
+    <h1>TÍNH TIỀN LƯƠNG</h1>
+    Họ Tên: <input type="text" id="HoTen"><br>
+    Năm vào làm: <input type="text" id="NamVaoLam"><br>
+    Hệ số : <input type="text" id="HeSo"><br>
+    Lương cơ sở: <input type="text" id="LuongCoSo" onkeyup="XuLy()"><br>
+    Lương cơ bản: <input type="text" id="LuongCoBan" readonly><br>
+    Phụ cấp: <input type="text" id="PhuCap" readonly><br>
+    Thâm niên: <input type="text" id="ThamNien" readonly><br>
+    Thành tiền: <input type="text" id="ThanhTien" readonly><br>
+</body>
+</html>

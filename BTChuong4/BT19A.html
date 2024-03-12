@@ -1,0 +1,25 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xử lý sự kiện</title>
+    <style>
+        body {
+            height: 200px;
+            margin: 20;
+        }
+    </style>
+</head>
+<body>
+    <script lang="JavaScript">
+        function HienThi(txt) 
+        {
+            alert(txt); 
+        }
+    </script>
+    <input type="button" value="Gửi" onmousemove="HienThi('Chuột trong nút') ;" >
+    <input type="text" id="HoTen" onmousemove="HienThi('Chuột trong textbox');"><br>
+    <input type="radio" name="GioiTinh" onmousemove="HienThi('Chuột trong giới tính nam');">Nam 
+    <input type="radio" name="GioiTinh" onmousemove="HienThi('Chuột trong giới tính nữ');">Nữ 
+</body>
+</html>

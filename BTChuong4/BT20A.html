@@ -1,0 +1,28 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tính tiền</title>
+    <style>
+        h1 {
+            width: 1000px;
+            height: 20px;
+        }
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            background-color: lavender;
+            padding: 10px;
+            margin: 10px;
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hãy nhập số lượng và giá</h1>
+    Số lượng: <input type="text" id="SoLuong">
+    Đơn giá: <input type="text" id="DonGia" onkeyup="ThanhTien.value = SoLuong.value * DonGia.value"><br><br>
+    Thành tiền: <input type="text" id="ThanhTien" value="USD" readonly>
+
+</body>
+</html>

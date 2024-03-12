@@ -1,0 +1,26 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #Tinh {
+            margin: 10;
+            font-size:15;
+            padding: auto;
+        }
+    </style>
+</head>
+<body>
+    <h2>Hãy nhập 2 số và nhấp vào nút cộng, trừ, nhân, chia </h2>
+    <input type="text" id="SoHang1"> 
+    <input type="text" id="SoHang2"> = 
+    <input type="text" id="KetQua" readonly>
+    <br>
+    <br>
+    <input type="radio" value="+" name="group1" id="Tinh" onclick="KetQua.value = parseFloat(SoHang1.value) + parseFloat(SoHang2.value)"> Cộng
+    <input type="radio" value="-" name="group1" id="Tinh" onclick="KetQua.value = parseFloat(SoHang1.value) - parseFloat(SoHang2.value)"> Trừ
+    <input type="radio" value="*" name="group1" id="Tinh" onclick="KetQua.value = parseFloat(SoHang1.value) * parseFloat(SoHang2.value)"> Nhân
+    <input type="radio" value="/" name="group1" id="Tinh" onclick="KetQua.value = (parseFloat(SoHang1.value) / parseFloat(SoHang2.value)).toFixed(2)"> Chia
+</body>
+</html>

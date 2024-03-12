@@ -1,0 +1,50 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #Tinh {
+            margin: 10;
+            font-size:15;
+            padding: auto;
+        }
+    </style>
+</head>
+<body>
+    <h2>Hãy nhập 2 số và nhấp vào nút cộng, trừ, nhân, chia </h2>
+    <input type="text" id="SoHang1"> 
+    <input type="text" id="SoHang2"> = 
+    <input type="text" id="KetQua" readonly>
+    <br>
+    <br>
+    <select id="LuaChon" size="1">
+        <option value="+">Cộng</option>
+        <option value="-">Trừ</option>
+        <option value="*">Nhân</option>
+        <option value="/">Chia</option>
+    </select>
+    <input type="button" value="Tính" id="Tinh" onclick="XuLy()">
+    <script lang="JavaScript">
+        function XuLy()
+        {
+            if(LuaChon.value == "+")
+            {
+                KetQua.value = parseFloat(SoHang1.value) + parseFloat(SoHang2.value);
+            }
+            else if(LuaChon.value == "-")
+            {
+                KetQua.value = parseFloat(SoHang1.value) - parseFloat(SoHang2.value);
+            }
+            else if(LuaChon.value == "*")
+            {
+                KetQua.value = parseFloat(SoHang1.value) * parseFloat(SoHang2.value);
+            }
+            else (LuaChon.value == "/")
+            {
+                KetQua.value = (parseFloat(SoHang1.value) / parseFloat(SoHang2.value)).toFixed(2);
+            }
+        }
+    </script>
+</body>
+</html>
